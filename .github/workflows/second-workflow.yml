@@ -1,0 +1,13 @@
+name: Second workflow
+on: push
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello github actions
+              run: echo "this is the second github workflow action"
+    bye-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Bye Github Actions
+              run:  echo "Bye Github Actions"        
